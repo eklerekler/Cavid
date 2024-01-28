@@ -1,0 +1,574 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #e6af3a;
+}
+a:hover {
+  color: #e6af3a;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 5px 0;
+  background-color: #212529;
+}
+header .imgbox {
+  width: 140px;
+  height: 20px;
+}
+header .imgbox img {
+  cursor: pointer;
+}
+header nav a {
+  font-size: 18px;
+  color: #e4d9d9;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  header {
+    padding: 20px 0;
+  }
+  header .imgbox {
+    display: flex;
+    align-items: start;
+  }
+  header .btn {
+    border-radius: 5px;
+    font-size: 14px;
+    color: #9999ad;
+    margin: 0 0 0 50px;
+    padding: 7px 11px;
+    font-weight: 600;
+    border: 1px solid #9999ad;
+    display: flex;
+    justify-content: between;
+    align-items: center;
+  }
+  header .btn i {
+    margin: 0 0 0 10px;
+  }
+  header nav a {
+    display: none;
+  }
+}
+@media (min-width: 850px) and (max-width: 999px) {
+  header {
+    padding: 25px 0;
+  }
+  header .btn {
+    position: fixed;
+    right: 130px;
+  }
+}
+@media (min-width: 575px) and (max-width: 849px) {
+  header {
+    padding: 25px 0;
+  }
+  header .btn {
+    position: fixed;
+    right: 35px;
+  }
+}
+@media (min-width: 300px) and (max-width: 574px) {
+  header {
+    padding: 25px 0;
+  }
+  header .btn {
+    position: fixed;
+    right: 10px;
+  }
+}
+#studio {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+#studio .textbox {
+  color: white;
+  text-align: center;
+}
+#studio .textbox h2 {
+  padding: 180px 0 35px;
+  font-size: 50px;
+  font-weight: 400;
+}
+#studio .textbox h4 {
+  margin-bottom: 70px;
+  font-size: 75px;
+  font-weight: 700;
+}
+#studio .btn {
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 55px;
+  background-color: #ffc800;
+}
+#studio .btn h2 {
+  cursor: pointer;
+}
+@media (min-width: 265px) and (max-width: 1300px) {
+  #studio {
+    height: 80vh;
+  }
+  #studio .btn {
+    margin: 0 5px;
+  }
+}
+
+#services {
+  padding: 90px 0;
+}
+#services .textbox {
+  text-align: center;
+}
+#services .textbox h2 {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+#services .textbox h4 {
+  color: #6a6a6a;
+  padding-bottom: 55px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+#services .icon {
+  border-radius: 50%;
+  background-color: #ffc800;
+  padding: 28px 25px;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .icon2 {
+  border-radius: 50%;
+  background-color: #ffc800;
+  padding: 28px 26px;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .icon3 {
+  border-radius: 50%;
+  background-color: #ffc800;
+  padding: 28px 36px;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .textbox h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#services .textbox h6 {
+  font-size: 20px;
+  color: #6a6a6a;
+  line-height: 1.4;
+}
+
+@media (max-width: 999px) {
+  h6 {
+    margin-bottom: 25px;
+  }
+}
+#portfolio {
+  padding: 40px 0 60px;
+  background-color: #f6f6f6;
+}
+#portfolio .divbox {
+  text-align: center;
+}
+#portfolio .divbox h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+#portfolio .divbox h3 {
+  padding: 18px 0 50px;
+  line-height: 1.3;
+  color: #6a6a6a;
+  font-size: 20px;
+}
+#portfolio .textbox {
+  background-color: white;
+  margin: 0 2px 18px;
+  text-align: center;
+}
+#portfolio .textbox h2 {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 25px 0 10px;
+}
+#portfolio .textbox h4 {
+  color: #6a6a6a;
+  font-size: 20px;
+  line-height: 1.3;
+  padding-bottom: 25px;
+}
+#portfolio .box {
+  position: relative;
+}
+#portfolio .box .icon {
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: #ffc800;
+}
+#portfolio .box .icon i {
+  font-size: 60px;
+  cursor: pointer;
+}
+#portfolio .box .icon:hover {
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+#about {
+  padding-bottom: 50px;
+}
+#about .box, #about .Divbox {
+  padding: 10px 0 55px;
+}
+#about .box h1, #about .Divbox h1 {
+  font-size: 45px;
+  padding: 45px 0 15px;
+  font-weight: 700;
+}
+#about .box h4, #about .Divbox h4 {
+  color: #969696;
+  font-size: 20px;
+}
+#about .box h2, #about .Divbox h2 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin: 0 110px;
+}
+#about .box h3, #about .Divbox h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin: 0 110px;
+}
+#about .box h5, #about .Divbox h5 {
+  font-size: 19px;
+  color: #969696;
+  line-height: 1.8;
+  margin: 0 110px;
+}
+#about .box h6, #about .Divbox h6 {
+  font-size: 19px;
+  color: #969696;
+  line-height: 1.5;
+  margin: 0 110px;
+}
+#about .imgbox {
+  position: absolute;
+  left: 44%;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e9ecef;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#about .Bigbox {
+  display: flex;
+  justify-content: center;
+}
+#about .Bigbox .boxes {
+  padding-top: 30px;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e9ecef;
+  border-radius: 50%;
+  background-color: #ffc800;
+}
+#about .Bigbox h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px 48px;
+}
+@media (max-width: 299px) {
+  #about .Bigbox .boxes {
+    left: 0;
+  }
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  #about .box h2, #about .box h3, #about .box h5, #about .box h6 {
+    margin: 0 20px 0 110px;
+  }
+  #about .box .imgbox {
+    left: 10px;
+    width: 90px;
+    height: 90px;
+    border: 7px solid #e9ecef;
+  }
+  #about .box .divtext h2, #about .box .divtext h3, #about .box .divtext h6 {
+    text-align: start;
+  }
+  #about .Bigbox {
+    display: flex;
+    justify-content: start;
+  }
+  #about .Bigbox .boxes {
+    padding-top: 30px;
+    width: 90px;
+    height: 90px;
+    border: 7px solid #e9ecef;
+  }
+  #about .Bigbox h4 {
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    bottom: 45%;
+    right: 35%;
+  }
+}
+@media (min-width: 769px) and (max-width: 994px) {
+  #about .box h2, #about .box h3, #about .box h5, #about .box h6 {
+    margin: 0 50px;
+  }
+  #about .box .imgbox {
+    width: 100px;
+    height: 100px;
+    border: 7px solid #e9ecef;
+  }
+  #about .Bigbox .boxes {
+    padding-top: 30px;
+    width: 100px;
+    height: 100px;
+    border: 7px solid #e9ecef;
+  }
+  #about .Bigbox h4 {
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    bottom: 30%;
+    right: 25%;
+  }
+}
+
+#team {
+  background-color: #f6f6f6;
+  padding: 90px 75px;
+}
+#team .textbox {
+  text-align: center;
+}
+#team .textbox h3 {
+  font-size: 45px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#team .textbox h4 {
+  color: #969696;
+  font-size: 18px;
+  padding-bottom: 60px;
+}
+#team .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 25px 0 10px;
+}
+#team .textbox h5 {
+  color: #969696;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+#team .textbox h6 {
+  font-size: 18px;
+  color: #969696;
+}
+#team .textbox p {
+  font-size: 18px;
+  color: #969696;
+  padding: 50px 0 10px;
+}
+#team .box .imgbox {
+  width: 220px;
+}
+#team .box .imgbox img {
+  border-radius: 100%;
+  border: 8px solid #dfe0e1;
+}
+#team .box .textbox {
+  text-align: center;
+  margin: 15px 0;
+}
+#team .box ul {
+  display: flex;
+  justify-content: center;
+}
+#team .box ul li {
+  margin: 9px;
+}
+#team .box ul li .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #1f1e1e;
+  color: white;
+}
+
+#microsoft .one {
+  margin: 50px 30px;
+}
+#microsoft .one img {
+  cursor: pointer;
+}
+#microsoft .two {
+  margin: 45px 30px;
+  margin-left: 65px;
+}
+#microsoft .two img {
+  cursor: pointer;
+}
+#microsoft .three {
+  margin: 50px 30px;
+  margin-left: 65px;
+}
+#microsoft .three img {
+  cursor: pointer;
+}
+#microsoft .four {
+  margin: 45px 30px;
+  margin-left: 72px;
+}
+#microsoft .four img {
+  cursor: pointer;
+}
+
+#contact {
+  padding: 65px 0;
+  background-color: #212529;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+}
+#contact .textbox {
+  text-align: center;
+}
+#contact .textbox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  padding: 65px 0 20px;
+}
+#contact .textbox h3 {
+  color: #757575;
+  padding-bottom: 55px;
+}
+#contact .box {
+  padding-bottom: 40px;
+}
+#contact .box .add input {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px;
+  width: 100%;
+  margin: 0 0 26px 0;
+}
+#contact .demo textarea {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18px;
+  width: 100%;
+  border-radius: 5px;
+}
+#contact .box .btn {
+  padding: 20px 55px;
+  border-radius: 5px;
+  opacity: 0.5;
+  background-color: #ffc800;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 999px) {
+  #contact {
+    background-color: #212529;
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  }
+  #contact .box .btn {
+    margin: 55px 45px 0;
+  }
+}
+
+#website {
+  padding: 20px 0;
+}
+#website .bigbox ul {
+  display: flex;
+  justify-content: center;
+}
+#website .bigbox ul li {
+  margin: 0 10px;
+}
+#website .bigbox ul li .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #1f1e1e;
+  color: white;
+}
+#website .bigbox ul li .icon i {
+  cursor: pointer;
+}
+#website .box h3 {
+  margin-top: 15px;
+}
+#website .textbox h4 {
+  margin-top: 15px;
+  padding: 0 35px 0 25px;
+  display: inline-block;
+}
+#website .textbox h3 {
+  margin-top: 15px;
+  display: inline-block;
+}
+@media (max-width: 750px) {
+  #website .box {
+    display: flex;
+    justify-content: center;
+  }
+  #website .bigbox ul li {
+    margin-top: 20px;
+  }
+  #website .textbox h4 {
+    margin-right: 45px;
+  }
+}/*# sourceMappingURL=style.css.map */
